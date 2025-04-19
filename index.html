@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TrendWear - Modern Streetwear</title>
+    <link rel="stylesheet" href="Assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">TrendWear</div>
+            <ul class="navlinks" id="navLinks">
+                <li class="navlink"><a href="#home" class="link">Home</a></li>
+                <li class="navlink"><a href="#shop" class="link-shop">Shop</a></li>
+                <li class="navlink"><a href="#testimonials" class="link">Testimonials</a></li>
+                <li class="navlink"><a href="#contact" class="link">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span class="hamburger-menu-span"></span>
+                <span class="hamburger-menu-span"></span>
+                <span class="hamburger-menu-span"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-logo">Step into Style. Define Your Trend.</h1>
+            <p class="hero-text">Explore our curated collection of modern streetwear designed for you.</p>
+            <div class="hero-image">
+                <img src="Assets/Hero image.jpeg" alt="Modern Streetwear Collection" class="hero-img">
+            </div>
+            <button class="hero-button">Discover the New Arrivals</button>
+        </div>
+        
+    </section>
+
+    <section class="products" id="shop">
+        <h2 class="featured-products">Our Featured Collection</h2>
+        <div class="products-container">
+            <div class="product-container">
+                <img src="Assets/urban tee edge.jpeg" alt="Street T-Shirt" class="product-img" />
+                <h3 class="product-name">Urban Edge Tee</h3>
+                <p class="product-price">$34.99</p>
+                <button class="product-button">View Details</button>
+            </div>
+            <div class="product-container">
+                <img src="Assets/Shadow Hoodie.jpeg" alt="Trendy Hoodie" class="product-img" />
+                <h3 class="product-name">Shadow Black Hoodie</h3>
+                <p class="product-price">$59.99</p>
+                <button class="product-button">View Details</button>
+            </div>
+            <div class="product-container">
+                <img src="Assets/Storm Riders.jpeg" alt="Denim Jacket" class="product-img" />
+                <h3 class="product-name">Retro Denim Rider</h3>
+                <p class="product-price">$79.99</p>
+                <button class="product-button">View Details</button>
+            </div>
+           
+        <button>Explore Our Full Range</button>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2 class="testimony-heading">Loved by Our Community</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="Assets/lAMIN C.jpeg" alt="Happy customer Lamin" class="testimonial-img" />
+                <div class="testimonial-info">
+                    <p class="testimony-name">Lamin C.</p>
+                    <p class="testimony">"The quality of the clothing is outstanding, and the designs are unique. I always get compliments when I wear TrendWear!"</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="Assets/Fatima.jpeg" alt="Happy customer Fatima" class="testimonial-img" />
+                <div class="testimonial-info">
+                    <p class="testimony-name">Fatima T.</p>
+                    <p class="testimony">"Fast delivery and the packaging was impressive. The hoodie I ordered is so comfortable and stylish. Will definitely be buying more!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sign-up" id="contact">
+        <h2 class="sign-up-heading">Join Our Style List</h2>
+        <form>
+            <input type="email" class="input" placeholder="Your email" />
+            <button class="sign-up-button">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TrendWear. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburgerMenu.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                hamburgerMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
